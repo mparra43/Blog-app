@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./routes";
 import { TransversalProvider } from "./feature/transversal";
+import '@/styles/global.css'
 
 function App() {
   return (

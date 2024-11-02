@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+i {
+    font-style: normal !important
+  }
+
+@font-face {
+    font-family: FontAwesome6ProRegular;
+    src: url(./fonts/FontAwesome6ProRegular400.otf);
+  }
+  
+  @font-face {
+    font-family: FontAwesome6ProSolid;
+    src: url(./fonts/FontAwesome6ProSolid900.otf);
+  }
+  
+  @font-face {
+    font-family: FontAwesome6ProLight;
+    src: url(./fonts/FontAwesome6ProLight300.otf);
+  }
+  
+
+  .blog::before {
+    font-family: FontAwesome6ProSolid !important;
+    content: '\f781';
+  }
+
+  .user::before {
+    font-family: FontAwesome6ProSolid !important;
+    content: '\f406';
+  }
