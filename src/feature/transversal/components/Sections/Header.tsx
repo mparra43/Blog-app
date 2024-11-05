@@ -12,10 +12,11 @@ export interface HeaderProps {
       link: string;
     }
   }
+  showLogin?: boolean;
 }
 
 
-export const Header = ({ children, className, firstElement, header }: HeaderProps) => {
+export const Header = ({ children, className, firstElement, header, showLogin = true}: HeaderProps) => {
 
 
   return (
@@ -26,7 +27,7 @@ export const Header = ({ children, className, firstElement, header }: HeaderProp
       </div>
       {children && children}
       <div className='flex justify-center md:justify-start'>
-        {header?.loginButton &&
+        { showLogin &&header?.loginButton &&
           <Link
             className='rounded w-40 hidden md:flex font-ubuntu bg-teal-500 hover:bg-teal-200 p-3 text-base justify-center  text-white '
             data-testid='loginButton'

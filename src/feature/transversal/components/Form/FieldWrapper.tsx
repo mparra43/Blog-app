@@ -1,5 +1,10 @@
 import clsx from 'clsx'
 
+const  variants = {
+  left: '',
+  bottom: '',
+}
+
 export interface FieldWrapperProps {
   children: React.ReactNode
   className?: string
@@ -8,17 +13,17 @@ export interface FieldWrapperProps {
     React.LabelHTMLAttributes<HTMLLabelElement>,
     HTMLLabelElement
   >
-  leftIcon?: React.ReactElement
   labelPosition?: 'top' | 'right' | 'left'
   errorId?: string
   error?: string
   descriptionId?: string
   description?: string
+  variant?: keyof typeof variants
 }
 
 export type FieldWrapperPassThroughProps = Pick<
   FieldWrapperProps,
-  'description' | 'error' | 'label' | 'labelPosition' | 'labelProps' | 'leftIcon'
+  'description' | 'error' | 'label' | 'labelPosition' | 'labelProps' |'className' 
 >
 
 export const FieldWrapper: React.FC<FieldWrapperProps> = ({
@@ -26,17 +31,17 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   label,
   labelPosition = 'top',
   labelProps = {},
-  leftIcon,
   descriptionId,
   description,
   errorId,
   error,
   className
 }) => {
+
   const { className: labelClassName } = labelProps
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={className}>
       {label ? (
         <label
           {...labelProps}
@@ -52,9 +57,6 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
       ) : null}
 
       {!label ? children : null}
-      <div className='absolute top-1.5 left-2 text-gray-400 icon'>
-        {leftIcon}
-      </div>
 
       {description ? (
         <span

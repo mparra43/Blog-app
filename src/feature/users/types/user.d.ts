@@ -15,6 +15,12 @@ export interface AuthValues {
 }
 
 
+export type Users = User[];
+
+export type UsersResponse = {
+  users: Users;
+}
+
 export interface AuthAccessResponse  {
   roleId: AuthUser['roleId']
 }

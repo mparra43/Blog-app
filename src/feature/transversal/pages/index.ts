@@ -1,5 +1,5 @@
-export { ChangePassword } from "./ChangePassword";
+export { HomeLoggedIn } from "./HomeLoggedIn";
 export { Home } from "./Home";
 export { Login } from "./Login";
-export { RecoverPassword } from "./RecoverPassword";
+
 

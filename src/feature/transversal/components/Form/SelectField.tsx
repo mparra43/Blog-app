@@ -1,9 +1,7 @@
 import clsx from 'clsx'
 import { type ForwardedRef, forwardRef, useId } from 'react'
-
 import { inputClasses } from './classes'
-import type { FieldWrapperPassThroughProps } from './FieldWrapper'
-import { FieldWrapper } from './FieldWrapper'
+import { FieldWrapper, FieldWrapperPassThroughProps } from './FieldWrapper';
 
 export interface Option {
   label: string

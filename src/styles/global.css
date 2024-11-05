@@ -31,3 +31,8 @@ i {
     font-family: FontAwesome6ProSolid !important;
     content: '\f406';
   }
+
+  .circle-user::before {
+    font-family: FontAwesome6ProSolid !important;
+    content: '\f2bd';
+  }

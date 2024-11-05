@@ -7,7 +7,7 @@ import { useTransversal } from "../feature/transversal";
 
 export const AppRoutes = () => {
   const { isAuthenticated } = useTransversal();
-  console.log(isAuthenticated);
+ 
 
   const commonRoutes: RouteObject[] = [
     {

@@ -5,6 +5,7 @@ import { Footer, Header } from "./";
 
 interface LayoutProps {
   children: ReactNode
+  showLogin?: boolean;
 }
 
 
@@ -20,10 +21,10 @@ const header = {
   }
 }
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children, showLogin }: LayoutProps) => {
   return (
     <>
-      <Header className='flex justify-between px-6 lg:px-16 2xl:px-24' header={header}/>
+      <Header className='flex justify-between px-6 lg:px-16 2xl:px-24' header={header} showLogin={showLogin}/>
       {children}
       <Footer />
     </>

@@ -1,5 +1,5 @@
 const baseInputClasses =
-  'w-full px-4 py-2 text-gray-900 bg-white placeholder:text-gray-400 border border-gray-200 rounded-md focus:outline-none focus:border-secondary focus:ring focus:ring-secondary-100 focus:ring-opacity-40'
+  'w-full px-4 py-2 text-gray-900 bg-white placeholder:text-gray-400 border border-teal-200 rounded-md focus:outline-none focus:border-teal-500 focus:ring focus:ring-teal-100 focus:ring-opacity-40'
 const disabledInputClasses = 'disabled:bg-gray-100 disabled:text-gray-400 '
 const readOnlyInputClasses = 'read-only:text-gray-700'
 // const errorInputClasses =
