@@ -3,7 +3,7 @@ import { getTags, getPost } from "@/feature/service";
 import { Card, Dropdown, Layout } from "@/feature/transversal/components/Sections";
 import { useEffect, useState } from "react";
 import {  Tag, Tags } from "@/feature/transversal/types";
-import useFilter from "../hooks/filters";
+import useFilter from "@/feature/transversal/hooks/filters";
 
 
 

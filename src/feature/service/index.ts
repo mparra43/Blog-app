@@ -1,5 +1,6 @@
 import { apiPost, apiTag, apiUser } from '@/feature/api';
-import { PostsResponse, TagsResponse, UsersResponse } from '@/feature/transversal/types';
+import { PostsResponse, TagsResponse} from '@/feature/transversal/types';
+import { UsersResponse } from '@/feature/users/types/user';
 
 
 export const getPost = (): Promise<PostsResponse> =>

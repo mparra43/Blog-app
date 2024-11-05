@@ -3,7 +3,7 @@ import { Navigate, RouteObject, useRoutes } from "react-router-dom";
 
 import { protectedRoutes } from "./protected";
 import { publicRoutes } from "./public";
-import { useTransversal } from "../feature/transversal";
+import { useTransversal } from "@/feature/transversal";
 
 export const AppRoutes = () => {
   const { isAuthenticated } = useTransversal();

@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom'
 
-import { lazyImport } from '../utils/lazyImport'
+import { lazyImport } from '@/utils/lazyImport'
 
 const { TransversalRoutes } = lazyImport(() => import('@/feature/transversal'), 'TransversalRoutes')
 

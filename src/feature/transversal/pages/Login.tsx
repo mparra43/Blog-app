@@ -3,7 +3,7 @@ import { Layout } from "@/feature/transversal/components/Sections";
 import { InputField } from "@/feature/transversal/components/Form";
 
 import { useForm } from "react-hook-form";
-import { LoginValues } from "../schemas";
+import { LoginValues } from "@/feature/transversal/schemas";
 import { useTransversal } from "../context/transversal";
 
 

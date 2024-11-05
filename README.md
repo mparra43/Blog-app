@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite  Blog 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de ejemplo creado con Vite y React.
 
-Currently, two official plugins are available:
+#Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto utiliza Vite para el empaquetado rápido de módulos y React como biblioteca de interfaz de usuario. Está diseñado para ser una base de partida para proyectos que requieran una configuración rápida y eficiente.
 
-## Expanding the ESLint configuration
+cuenta con tres page inicio, home y login y
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+# Requisitos
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Node.js (versión 14 o superior)
+Yarn o npm
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#Instalación
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Clona el repositorio
+git clone https://github.com/mparra43/Blog-app.git
+
+# Accede al directorio del proyecto
+cd nombre-del-repo
+
+# Instala las dependencias
+npm install
+# o
+yarn install
+
+# variables de entono 
+agregue un archivo .env con las siguientes variables
+
+VITE_URL_POST = https://0154e0e1fa5a4e29a9b2ca9b16f11de1.api.mockbin.io
+VITE_URL_USER = https://ffc4cb9161234296971429aa124107be.api.mockbin.io
+VITE_URL_TAG = https://1e3602fcb5274f53854b8fc88a6d4f30.api.mockbin.io
